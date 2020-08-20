@@ -7,6 +7,10 @@ snake[0] = {
     x: 8 * box,
     y: 8 * box
 }
+let food = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
+}
 
 let direccion = "right";
 
@@ -25,6 +29,11 @@ function criarCobra() {
     }
 
 
+}
+
+function apple() {
+    ctx.fillStyle = "red";
+    ctx.fillRect(food.x, food.y, box, box);
 }
 
 //Ações com o clique
@@ -54,6 +63,7 @@ function iniciarJogo() {
 
     criarBG();
     criarCobra();
+    apple();
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
