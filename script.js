@@ -18,7 +18,7 @@ function criarBG() {
 
     ctx.fillStyle = "#04B431";
     ctx.fillRect(0, 0, 16 * box, 16 * box);
-    ctx.canvas.style.border = "16px solid #000";
+    ctx.canvas.style.border = "16px solid green";
 
 }
 
@@ -55,10 +55,10 @@ function iniciarJogo() {
     // Movimentos para não sumir da tela
 
    
-    if (snake[0].x > 15 * box && direccion == "right") snake[0].x = 0;
-    if (snake[0].x < 0 && direccion == "left") snake[0].x = 16 * box;
-    if (snake[0].y > 15 * box && direccion == "down") snake[0].y = 0;
-    if (snake[0].y < 0 && direccion == "up") snake[0].y = 16 * box;
+    if (snake[0].x > 15 * box && direccion == "right") {clearInterval (jogo); alert("GAME OVER!")};
+    if (snake[0].x < 0 && direccion == "left") {clearInterval (jogo); alert("GAME OVER!")};
+    if (snake[0].y > 15 * box && direccion == "down") {clearInterval (jogo); alert("GAME OVER!")};
+    if (snake[0].y < 0 && direccion == "up") {clearInterval (jogo); alert("GAME OVER!")};
 
     // Game Over
 
