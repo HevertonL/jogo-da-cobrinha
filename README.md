@@ -6,7 +6,7 @@ Um projeto idealizado pela Gabriela Pinheiro em parceria com a Digital Innovatio
 
 Fiz a adição de algumas coisas que não estão no projeto original, como cores diferentes e borda. Além de "alert's de GAME OVER", caso bata em algumas dessas bordas.
 
-<img src=”C:\Users\Heverton&Jéssica\Desktop\snake-game\snake-game">
+![Snake-game](https://user-images.githubusercontent.com/55883947/91062353-f9978000-e602-11ea-9ae9-bb17e7a4e104.jpg)
 
 Foram utilizadas as ferramentas: HMTL5, CSS3, Javascript, e o Canvas.
 
